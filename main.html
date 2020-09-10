@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+        var n = parseInt(prompt("Nhập vào số phần từ của mảng :"))
+        var arr = [];
+        for(var i = 0 ; i < n ; i++){
+            var b = parseInt(prompt("Các phần tử của mảng tại index " + i))
+            arr.push(b);
+        }
+        document.write("Các số là :")
+        for(var i = 0 ; i < arr.length ; i++){
+           if(arr[i] >= 10 ){
+               document.write(`${arr[i]} - `);
+           }
+        }
+        
+    </script>
+</body>
+</html>
